@@ -1,0 +1,127 @@
+.deineBC {
+  background-color: #dddfd5;
+  height: 600px;
+  position: relative;
+}
+
+.deineBCSVG {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.deineBCSVG2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.deineSecond {
+  max-width: 1600px;
+}
+
+.deine {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.deineTitle {
+  letter-spacing: 1.6px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 85px;
+}
+
+.deineTitleBig {
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.deineLineContainer {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.deineContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.deineLine {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.deineLineNumber {
+  flex: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.deineLineNumberValue {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background-color: #deb47d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.deineItem {
+  flex: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-bottom: 80px;
+}
+
+.deineItemTitle {
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.deineItemText {
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.5;
+  font-size: 18px;
+  text-align: center;
+  max-width: 460px;
+}

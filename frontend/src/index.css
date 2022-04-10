@@ -1,0 +1,73 @@
+:root {
+  /*SIZE*/
+  ---main-padding: 0px;
+
+  ---border-radius: 0px;
+  ---border-radius-button: 0px;
+  ---border-radius-small: 0px;
+
+  ---navbar-height: 100px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e9e7e2;
+}
+
+.main {
+  margin-bottom: 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.componentFirst {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.componentSecond {
+  width: 100%;
+  max-width: 1450px;
+  display: flex;
+  margin: 0 50px;
+}
+
+.GoToTop {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #deb47d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s cubic-bezier(0, 1.01, 0.4, 1.9);
+}
+
+@media only screen and (max-width: 670px) {
+  .componentSecond {
+    margin: 0 20px;
+  }
+  .main {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .componentSecond {
+    margin: 0 10px;
+  }
+}

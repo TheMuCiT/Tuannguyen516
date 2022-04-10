@@ -1,0 +1,108 @@
+.dein {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stepsLeftSVG {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+  transform: translate(-50%);
+}
+
+.stepsRightSVG {
+  position: absolute;
+  left: 99%;
+  top: 10%;
+  transform: translate(-50%);
+}
+
+.deinTitle {
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.5;
+  font-size: 18px;
+  max-width: 550px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.deinContainer {
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 80px;
+  gap: 26px;
+}
+
+.deinItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.deinItemIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #deb47d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deinItemText {
+  margin-left: 20px;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+  font-size: 20px;
+  text-align: left;
+  max-width: 270px;
+}
+
+.deinFooter {
+  position: relative;
+  padding: 250px 0 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.deinFooterTitle {
+  letter-spacing: 0px;
+  opacity: 1;
+  font-size: 48px;
+  text-align: center;
+  max-width: 1100px;
+  color: #0d0d0d;
+}
+
+.deinFooterSpan {
+  color: #deb47d;
+}
+
+.deinFooterButton {
+  background-color: #deb47d;
+  border-radius: 47px;
+  padding: 18px 40px;
+  margin-top: 35px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.deinFooterSVG {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  z-index: -1;
+  width: 100%;
+  max-width: 450px;
+}

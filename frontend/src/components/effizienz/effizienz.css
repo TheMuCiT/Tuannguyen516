@@ -1,0 +1,49 @@
+.effizienz {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+}
+
+.effizienzLeft {
+  flex: 40%;
+}
+
+.effizienzRight {
+  flex: 60%;
+  margin-left: 30px;
+}
+
+.effizienzSubTitle {
+  letter-spacing: 1.6px;
+  color: #deb47d;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.effizienzTitle {
+  letter-spacing: 0px;
+  color: #0d0d0d;
+  opacity: 1;
+  font-size: 48px;
+  font-weight: 600;
+  max-width: 400px;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+
+.effizienzText {
+  letter-spacing: 0px;
+  color: #0d0d0d;
+  opacity: 1;
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 620px;
+}
+
+.EffizienzSVG {
+  margin-top: 50px;
+  width: 100%;
+}

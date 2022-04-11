@@ -118,6 +118,7 @@
 
     .userRightText {
       text-align: center;
+      padding-left: 0;
     }
 
     .userRightText.second {

@@ -214,8 +214,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: var(--color-text-main);
-    font-weight: 400;
+    color: #000000;
+    font-weight: 600;
     font-size: 21px;
   }
 

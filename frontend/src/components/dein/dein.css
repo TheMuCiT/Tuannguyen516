@@ -47,6 +47,7 @@
 .deinItemIcon {
   width: 45px;
   height: 45px;
+  min-width: 45px;
   border-radius: 50%;
   background-color: #deb47d;
   display: flex;
@@ -105,4 +106,52 @@
   z-index: -1;
   width: 100%;
   max-width: 450px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .stepsLeftSVG {
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .deinContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stepsLeftSVG {
+    top: 55%;
+  }
+  .deinFooterTitle {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .deinContainer {
+    grid-template-columns: 1fr;
+  }
+  .stepsLeftSVG {
+    display: none;
+  }
+  .deinItemText {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .deinFooterTitle {
+    font-size: 26px;
+  }
+  .deinFooterButton {
+    width: auto;
+
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .stepsRightSVG {
+    display: none;
+  }
 }

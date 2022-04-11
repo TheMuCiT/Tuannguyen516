@@ -26,6 +26,11 @@ const Deine2 = () => {
           </div>
           <div className='deineContainer'>
             <div className='deineItem'>
+              <div className='deineMobileNumber'>
+                <div className='deineLineNumber'>
+                  <div className='deineLineNumberValue'>1</div>
+                </div>
+              </div>
               <div className='deineItemTitle'>Kennenlernen</div>
               <div className='deineItemText'>
                 Ich mache mich mit deinem Unternehmen, deinen Bedürfnissen und deinen Prozessen vertraut.
@@ -33,6 +38,11 @@ const Deine2 = () => {
             </div>
 
             <div className='deineItem'>
+              <div className='deineMobileNumber'>
+                <div className='deineLineNumber'>
+                  <div className='deineLineNumberValue'>2</div>
+                </div>
+              </div>
               <div className='deineItemTitle'>Optimieren</div>
               <div className='deineItemText'>
                 Wo Potenzial da ist, optimiere ich Prozesse mit deinem Einverständnis.
@@ -40,6 +50,11 @@ const Deine2 = () => {
             </div>
 
             <div className='deineItem'>
+              <div className='deineMobileNumber'>
+                <div className='deineLineNumber'>
+                  <div className='deineLineNumberValue'>3</div>
+                </div>
+              </div>
               <div className='deineItemTitle'>Umsetzen</div>
               <div className='deineItemText'>
                 Ich setze selbstständig um, was wir abgemacht haben und stehe dir bei allen Anliegen zur Seite.

@@ -235,12 +235,28 @@
   .footerMainRight {
     margin-top: 30px;
   }
+  .footerLogoTitle {
+    text-align: center;
+    width: 100%;
+  }
+  .footerLogoContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footerLogoText {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .footerMainRight {
     grid-template-columns: 1fr;
     grid-row-gap: 50px;
+  }
+  .footerMain {
+    gap: 0;
   }
 }
 

@@ -43,6 +43,7 @@
   font-size: 24px;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .navbarCenterItem {
@@ -120,7 +121,17 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1500px) {
+  .navbarCenterItem {
+    margin: 0 15px;
+  }
+  .navbarRightButton {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
   .navbar {
     justify-content: flex-end;
     align-items: center;

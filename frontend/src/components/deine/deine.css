@@ -49,6 +49,7 @@
   font-size: 36px;
   font-weight: 600;
   margin-top: 30px;
+  text-align: center;
 }
 
 .deineLineContainer {
@@ -124,4 +125,46 @@
   font-size: 18px;
   text-align: center;
   max-width: 460px;
+}
+
+.deineMobileNumber {
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .deineTitleBig {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .deineLineContainer {
+    display: none;
+  }
+  .deineMobileNumber {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .deineContainer {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .deineItem {
+    flex: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+  .deineBC {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .deineTitleBig {
+    font-size: 26px;
+  }
 }

@@ -7,15 +7,12 @@
 .introLeft {
   flex: 60%;
   padding-bottom: 450px;
+  z-index: 10;
 }
 
 .introRight {
   flex: 40%;
   position: relative;
-}
-
-.introSVG {
-  width: 100%;
 }
 
 .introTitle {
@@ -55,4 +52,52 @@
   width: 140%;
   top: 0;
   right: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+  .intro {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .introLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .introTitle {
+    text-align: center;
+    font-size: 40px;
+  }
+  .introText {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .introRight {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .introSVG {
+    position: relative;
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .introTitle {
+    font-size: 26px;
+  }
+  .introButton {
+    width: auto;
+
+    text-align: center;
+  }
 }

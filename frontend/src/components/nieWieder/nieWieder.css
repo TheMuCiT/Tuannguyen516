@@ -63,3 +63,33 @@
   opacity: 1;
   font-size: 20px;
 }
+
+@media only screen and (max-width: 1050px) {
+  .nieWiederTitle {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .nieWiederItem {
+    flex-direction: column;
+  }
+
+  .nieWiederItemLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nieWiederItemRight {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nieWiederTitle {
+    font-size: 26px;
+  }
+}

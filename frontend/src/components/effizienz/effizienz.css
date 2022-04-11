@@ -47,3 +47,47 @@
   margin-top: 50px;
   width: 100%;
 }
+
+@media only screen and (max-width: 1100px) {
+  .effizienz {
+    flex-direction: column;
+    width: 100%;
+  }
+  .effizienzLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .effizienzSubTitle {
+    text-align: center;
+  }
+  .effizienzTitle {
+    text-align: center;
+    font-size: 48px;
+  }
+  .effizienzText {
+    text-align: center;
+  }
+  .effizienzRight {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .EffizienzSVG {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .effizienzTitle {
+    font-size: 26px;
+  }
+  .effizienzText {
+    font-size: 16px;
+  }
+}

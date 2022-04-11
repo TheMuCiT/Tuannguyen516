@@ -5,6 +5,11 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.userAni {
+  transition: all 0.75s cubic-bezier(0.645, 0.045, 0.355, 1), transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .userTitle {
   letter-spacing: 0px;
   color: #0d0d0d;

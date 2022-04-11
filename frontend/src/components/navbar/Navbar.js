@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className='navbarContainer SlideRightAnimation'>
+      <div className='navbarContainer'>
         <div className='navbarLeft'>
           <div className='navbarLeftLogo'>Life of Circle</div>
         </div>

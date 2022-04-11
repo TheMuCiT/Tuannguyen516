@@ -8,11 +8,15 @@
   flex: 60%;
   padding-bottom: 450px;
   z-index: 10;
+  opacity: 0;
+  animation: slideLeft 2s 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .introRight {
   flex: 40%;
   position: relative;
+  opacity: 0;
+  animation: slideRight 2s 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .introTitle {

@@ -11,7 +11,7 @@ import './dein.css'
 
 const Dein = () => {
   return (
-    <div className='componentFirst '>
+    <div className='componentFirst deinAni'>
       <StepsLeftSVG className='stepsLeftSVG' />
       <StepsRightSVG className='stepsRightSVG' />
       <div className='componentSecond'>

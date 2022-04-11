@@ -6,7 +6,7 @@ import './nieWieder.css'
 
 const NieWieder = () => {
   return (
-    <div className='componentFirst'>
+    <div className='componentFirst nieWiederAni'>
       <div className='componentSecond'>
         <div className='nieWieder'>
           <div className='nieWiederHeader'>

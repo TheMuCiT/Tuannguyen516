@@ -1,6 +1,8 @@
 .faqBC {
   background-color: #dddfd5;
   position: relative;
+  transition: all 0.75s cubic-bezier(0.645, 0.045, 0.355, 1), transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .faqSVG {

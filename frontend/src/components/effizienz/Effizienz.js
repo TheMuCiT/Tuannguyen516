@@ -6,7 +6,7 @@ import './effizienz.css'
 
 const Effizienz = () => {
   return (
-    <div className='componentFirst'>
+    <div className='componentFirst effizienzAni'>
       <div className='componentSecond'>
         <div className='effizienz'>
           <div className='effizienzLeft'>

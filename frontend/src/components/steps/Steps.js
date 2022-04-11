@@ -11,7 +11,7 @@ import './steps.css'
 
 const Steps = () => {
   return (
-    <div className='componentFirst'>
+    <div className='componentFirst stepsAni'>
       <StepsLeftSVG className='stepsLeftSVG' />
       <StepsRightSVG className='stepsRightSVG' />
       <div className='componentSecond'>

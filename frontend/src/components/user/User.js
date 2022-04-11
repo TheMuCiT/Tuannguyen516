@@ -34,7 +34,7 @@ const User = () => {
   }
 
   return (
-    <div className='componentFirst'>
+    <div className='componentFirst userAni'>
       <div className='componentSecond'>
         <div className='user'>
           <div className='nieWiederHeader'>

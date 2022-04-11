@@ -5,12 +5,11 @@
 
 .faqSVG {
   position: absolute;
-  top: 0;
+  top: -200px;
   left: 0;
-  width: 80%;
+  width: 100%;
   height: auto;
-  background-color: skyblue;
-  z-index: 999;
+  z-index: 0;
 }
 
 .faq {
@@ -20,6 +19,7 @@
   justify-content: center;
   flex-direction: column;
   padding-top: 100px;
+  z-index: 1;
 }
 
 .faqTitle {
@@ -108,4 +108,13 @@
   font-size: 28px;
   margin-top: 30px;
   text-align: center;
+}
+
+.faqArrowSVG {
+  transition: all 0.3s;
+}
+
+.faqArrowSVGActive {
+  transform: rotate(90deg);
+  transition: all 0.3s;
 }

@@ -1,0 +1,157 @@
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.userTitle {
+  letter-spacing: 0px;
+  color: #0d0d0d;
+  opacity: 1;
+  font-weight: 600;
+  font-size: 48px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.userMain {
+  margin-top: 130px;
+  display: flex;
+  width: 100%;
+}
+
+.userLeft {
+  flex: 46%;
+  justify-content: center;
+  display: flex;
+}
+
+.userLeftItem {
+  width: 544px;
+  height: 145px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userLeftItem.selected {
+  background: #dddfd5 0% 0% no-repeat padding-box;
+}
+
+.userLeftItemIMG {
+  flex: 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userLeftItemText {
+  flex: 81%;
+  cursor: pointer;
+}
+
+.userLeftItemTextHeader {
+  font-size: 26px;
+  color: #0d0d0d;
+  cursor: pointer;
+}
+
+.userLeftItemTextAbout {
+  font-size: 20px;
+  color: #0d0d0d;
+  opacity: 0.5;
+  margin-top: 5px;
+}
+
+.userRight {
+  flex: 54%;
+}
+
+.userRightStar {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.userRightText {
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 22px;
+  color: #0d0d0d;
+}
+
+@media only screen and (max-width: 1400px) {
+  .userContainer {
+    width: 95%;
+  }
+
+  .userHeader {
+    font-size: 44px;
+  }
+
+  .userRightHeader {
+    text-align: center;
+    font-size: 44px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .userMain {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .userRight {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .userRightText {
+      text-align: center;
+    }
+
+    .userRightText.second {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .userLeftItem {
+    width: 342px;
+    height: 112px;
+  }
+  .userLeftItemIMGPNG {
+    width: 58px;
+    height: 58px;
+  }
+
+  .userLeftItemTextHeader {
+    font-size: 22px;
+  }
+
+  .userLeftItemTextAbout {
+    font-size: 17px;
+  }
+
+  .userRight {
+    margin-top: 20px;
+  }
+
+  .userRightHeader {
+    font-size: 36px;
+  }
+
+  .userRightStar {
+    margin-bottom: 10px;
+  }
+
+  .userRightText {
+    font-size: 20px;
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 import nieWiederPNg from '../../icons/nieWieder.png'
 
-import { ReactComponent as ArrowSVG } from '../../icons/Arrow.svg'
+import { ReactComponent as ArrowSVG } from '../../icons/Dein.svg'
 import { ReactComponent as DeinStarSVG } from '../../icons/DeinStar.svg'
 import { ReactComponent as StepsLeftSVG } from '../../icons/StepsLeft.svg'
 import { ReactComponent as StepsRightSVG } from '../../icons/StepsRight.svg'

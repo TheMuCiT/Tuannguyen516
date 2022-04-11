@@ -8,6 +8,7 @@ import Dein from '../../components/dein/Dein'
 import Deine2 from '../../components/deine/Deine2'
 import Effizienz from '../../components/effizienz/Effizienz'
 import Steps from '../../components/steps/Steps'
+import User from '../../components/user/User'
 import FAQ from '../../components/faq/FAQ'
 
 import './main.css'
@@ -22,6 +23,7 @@ const Main = () => {
       <Deine2 />
       <Effizienz />
       <Steps />
+      <User />
       <FAQ />
       <Animation />
     </div>

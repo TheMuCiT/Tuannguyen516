@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
-import { ReactComponent as ArrowSVG } from '../../icons/Arrow.svg'
+import { ReactComponent as ArrowSVG } from '../../icons/Dein.svg'
 import { ReactComponent as FaqSVG } from '../../icons/Faq.svg'
+import { ReactComponent as FaqArrowSVG } from '../../icons/FaqArrow.svg'
 
 import nieWiederPNg from '../../icons/nieWieder.png'
 
@@ -26,7 +27,9 @@ const FAQ = () => {
                 <div className='faqItemNumber'>01.</div>
                 <div className='faqItemTitle'>Welche Bereiche deckst du alles ab?</div>
               </div>
-              <div className='faqItemRight'>ICON</div>
+              <div className='faqItemRight'>
+                <FaqArrowSVG className={one ? 'faqArrowSVGActive' : 'faqArrowSVG'} />
+              </div>
             </div>
             {one && (
               <div className='faqItemAnswer'>
@@ -141,7 +144,9 @@ const FAQ = () => {
                 <div className='faqItemNumber'>02.</div>
                 <div className='faqItemTitle'>Arbeitest du alleine oder hast duMitarbeiter:innen?</div>
               </div>
-              <div className='faqItemRight'>ICON</div>
+              <div className='faqItemRight'>
+                <FaqArrowSVG className={two ? 'faqArrowSVGActive' : 'faqArrowSVG'} />
+              </div>
             </div>
             {two && (
               <div className='faqItemAnswer'>
@@ -158,7 +163,9 @@ const FAQ = () => {
                 <div className='faqItemNumber'>03.</div>
                 <div className='faqItemTitle'>Kannst du dich als externe Fachkraft überhaupt auf mein </div>
               </div>
-              <div className='faqItemRight'>ICON</div>
+              <div className='faqItemRight'>
+                <FaqArrowSVG className={three ? 'faqArrowSVGActive' : 'faqArrowSVG'} />
+              </div>
             </div>
             {three && (
               <div className='faqItemAnswer'>

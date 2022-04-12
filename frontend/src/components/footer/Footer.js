@@ -45,8 +45,8 @@ const Footer = () => {
             </div>
             <div className='footerMainRightItem'>
               <div className='footerMainRightItemTitle'>Connect</div>
-              <div className='footerMainRightItemText'>Info@bold-themes.com</div>
-              <div className='footerMainRightItemText'>60 East 65th Street, New York</div>
+              <div className='footerMainRightItemTextNo'>Info@bold-themes.com</div>
+              <div className='footerMainRightItemTextNo'>60 East 65th Street, New York</div>
             </div>
           </div>
         </div>

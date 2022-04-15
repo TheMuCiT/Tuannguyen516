@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 import { ReactComponent as MobileMenu } from '../../icons/MobileMenu.svg'
 import { ReactComponent as Close } from '../../icons/Close.svg'
@@ -128,24 +129,25 @@ const Navbar = () => {
       setValidName(true)
       return
     }
-    /*const value = {
+    const value = {
       name: name,
       email: email,
       message: message,
-    }*/
+    }
     setName('')
     setEmail('')
     setMessage('')
 
-    /*emailjs.send('gmail', 'template_b47m5vw', value).then(
+    emailjs.send('gmail', 'template_zagnv46', value).then(
       function (response) {
         console.log('SUCCESS!', response.status, response.text)
         setSent(true)
+        setForm(false)
       },
       function (err) {
         console.log('FAILED...', err)
       }
-    )*/
+    )
   }
 
   window.addEventListener('resize', WindowChange)

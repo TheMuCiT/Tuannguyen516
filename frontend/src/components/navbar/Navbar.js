@@ -12,6 +12,7 @@ const Navbar = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [subject, setSubject] = useState('')
 
   const [sent, setSent] = useState(false)
 
@@ -20,6 +21,7 @@ const Navbar = () => {
   const [validName, setValidName] = useState(true)
   const [validEmail, setValidEmail] = useState(true)
   const [validMessage, setValidMessage] = useState(true)
+  const [validSubject, setValidSubject] = useState(true)
 
   const [Mobile, setMobile] = useState(false)
   useEffect(() => {
@@ -84,18 +86,18 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    if (validEmail && validMessage && validName) {
+    if (validEmail && validMessage && validName && validSubject) {
       SendEmail()
     }
     //eslint-disable-next-line
-  }, [validEmail, validName, validMessage, Enter])
+  }, [validEmail, validName, validMessage, Enter, validSubject])
 
   useEffect(() => {
     setTimeout(() => {
       if (sent) {
         setSent(false)
       }
-    }, 2000)
+    }, 1000)
   }, [sent])
 
   const handleApply = (e) => {
@@ -118,27 +120,36 @@ const Navbar = () => {
     } else {
       setValidMessage(true)
     }
+    if (subject.length < 10 || message.length > 30) {
+      setValidSubject(false)
+    } else {
+      setValidSubject(true)
+    }
+
     setSent(false)
     setEnter(!Enter)
   }
 
   const SendEmail = () => {
-    if (name.length === 0 && email.length === 0 && message.length === 0) {
+    if (name.length === 0 && email.length === 0 && message.length === 0 && subject.length === 0) {
       setValidEmail(true)
       setValidMessage(true)
       setValidName(true)
+      setValidSubject(true)
       return
     }
     const value = {
       name: name,
       email: email,
       message: message,
+      subject: subject,
     }
     setName('')
     setEmail('')
     setMessage('')
+    setSubject('')
 
-    emailjs.send('gmail', 'template_zagnv46', value).then(
+    emailjs.send('service_2riiyyp', 'template_enncsum', value, '5AgxOxIqxk5lMtmL2').then(
       function (response) {
         console.log('SUCCESS!', response.status, response.text)
         setSent(true)
@@ -189,7 +200,9 @@ const Navbar = () => {
                   <div className='navbarCenterLink opacity7' onClick={handleFAQs}>
                     FAQs
                   </div>
-                  <div className='navbarCenterLink navbarRightButton'>Schedule Video Call</div>
+                  <div className='navbarCenterLink navbarRightButton' onClick={handleSchedule}>
+                    Schedule Video Call
+                  </div>
                 </div>
               </div>
             </div>
@@ -286,6 +299,33 @@ const Navbar = () => {
                     onChange={(event) => setEmail(event.target.value)}
                   />
                 </div>
+              </div>
+            </div>
+            <div className='mainContactUsFormInput'>
+              <div className='mainContactUsFormInputTitle'>
+                {validSubject ? (
+                  'Subject*'
+                ) : (
+                  <>
+                    Subject*
+                    <span className='contactUsNotValidValue'>
+                      {' '}
+                      The subject should be between 10 and 30 symbols
+                    </span>
+                  </>
+                )}
+              </div>
+              <div
+                className={validSubject ? 'mainContactUsFormInputBox' : 'mainContactUsFormInputBox contactBorder'}
+              >
+                <input
+                  type='text'
+                  placeholder='In welchen Bereichen kann ich dir helfen?'
+                  className='contactUsInput'
+                  name='subject'
+                  value={subject}
+                  onChange={(event) => setSubject(event.target.value)}
+                />
               </div>
             </div>
             <div className='mainContactUsFormInput'>

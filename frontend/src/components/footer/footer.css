@@ -109,17 +109,17 @@
 }
 
 .footerIcon:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.footerIcon:active {
   -webkit-transform: scale(1.02);
   -moz-transform: scale(1.02);
   -o-transform: scale(1.02);
   transform: scale(1.02);
-}
-
-.footerIcon:active {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
 }
 
 .footerMainRightItemText {
@@ -145,18 +145,18 @@
 }
 
 .footerMainRightItemText:hover {
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  transform: scale(1.02);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
   opacity: 0.5;
 }
 
 .footerMainRightItemText:active {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
   opacity: 0.8;
 }
 

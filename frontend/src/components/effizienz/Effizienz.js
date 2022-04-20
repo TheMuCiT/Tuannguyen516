@@ -13,17 +13,13 @@ const Effizienz = () => {
             <div className='effizienzSubTitle'>ÜBER MICH</div>
             <div className='effizienzTitle'>Effizienz macht mich glücklich</div>
             <div className='effizienzText'>
-              Als Inhaber:in deines KMUs arbeitest du an vorderster Front mit. Neben deinem Kerngeschäft, musst du
-              dich aber noch um Buchhaltung, Personal-Management und Administration kümmern – oft wenn alle anderen
-              Feierabend haben oder das Wochenende geniessen.
+              Schon seit ich denken kann, bin ich ein Zahlenmensch. Effizienz und das Optimieren von Prozessen
+              begeistern mich. Wo andere bei hohen Papier-Stapeln und Excel-Listen die Nase rümpfen, macht sich bei
+              mir Vorfreude breit.
             </div>
             <div className='effizienzText'>
-              Dazu musst du immer mit den neuesten Gesetzen und Vorschriften vertraut sein, um rechtliche Probleme
-              zu vermeiden. Das Büro wird zum Synonym für Stress, Unsicherheit und enormen Zeitaufwand.
-            </div>
-            <div className='effizienzText'>
-              Für mich bedeutet Büro Effizienz, Spass und Spannung. Gerne nehme ich dir deine Büro-Belastung mit
-              einem individuellen Wohlfühlpaket ab.
+              Ich bringe aber nicht nur das kaufmännische Verständnis mit, sondern bin auch mit den Sorgen, Nöten
+              und Wünschen von Kleinbetrieben in der Handwerksbranche vertraut.
             </div>
           </div>
           <div className='effizienzRight'>

@@ -29,7 +29,7 @@ const Steps = () => {
           <div className='stepsItem'>
             <Step3SVG className='stepSVG' />
             <div className='stepsItemTitle'>Gelassen</div>
-            <div className='stepsItemText'>Ich behalte in noch so schwierigen Situationen einen kühlen Kopf</div>
+            <div className='stepsItemText'>Ich behalte in noch so schwierigen Situationen einen kühlen Kopf.</div>
           </div>
         </div>
       </div>

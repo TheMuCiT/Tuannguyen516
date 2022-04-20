@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 
 import { ReactComponent as MobileMenu } from '../../icons/MobileMenu.svg'
@@ -8,6 +9,8 @@ import './navbar.css'
 import './contactUs.css'
 
 const Navbar = () => {
+  let navigate = useNavigate()
+
   const [form, setForm] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -38,47 +41,60 @@ const Navbar = () => {
     }
   }
 
-  const handleAbout = () => {
-    let About = document.getElementsByClassName('nieWiederAni')
-    window.scroll({
-      top: About[0].offsetTop - 100,
-      behavior: 'smooth',
-    })
-  }
   const handleWarum = () => {
-    let Warum = document.getElementsByClassName('deineBC')
-    window.scroll({
-      top: Warum[0].offsetTop - 100,
-      behavior: 'smooth',
-    })
+    if (window.location.pathname === '/') {
+      let Warum = document.getElementsByClassName('deineBC')
+      window.scroll({
+        top: Warum[0].offsetTop - 100,
+        behavior: 'smooth',
+      })
+    } else {
+      navigate('../', { replace: true })
+    }
   }
   const handleDienstleistungen = () => {
-    let Dienstleistungen = document.getElementsByClassName('deinAni')
-    window.scroll({
-      top: Dienstleistungen[0].offsetTop - 100,
-      behavior: 'smooth',
-    })
+    if (window.location.pathname === '/') {
+      let Dienstleistungen = document.getElementsByClassName('deinAni')
+      window.scroll({
+        top: Dienstleistungen[0].offsetTop - 100,
+        behavior: 'smooth',
+      })
+    } else {
+      navigate('../', { replace: true })
+    }
   }
   const handleArbeitsablauf = () => {
-    let Arbeitsablauf = document.getElementsByClassName('deineBC')
-    window.scroll({
-      top: Arbeitsablauf[1].offsetTop - 100,
-      behavior: 'smooth',
-    })
+    if (window.location.pathname === '/') {
+      let Arbeitsablauf = document.getElementsByClassName('deineBC')
+      window.scroll({
+        top: Arbeitsablauf[1].offsetTop - 100,
+        behavior: 'smooth',
+      })
+    } else {
+      navigate('../', { replace: true })
+    }
   }
   const handleWerte = () => {
-    let Werte = document.getElementsByClassName('effizienzAni')
-    window.scroll({
-      top: Werte[0].offsetTop - 100,
-      behavior: 'smooth',
-    })
+    if (window.location.pathname === '/') {
+      let Werte = document.getElementsByClassName('effizienzAni')
+      window.scroll({
+        top: Werte[0].offsetTop - 100,
+        behavior: 'smooth',
+      })
+    } else {
+      navigate('../', { replace: true })
+    }
   }
   const handleFAQs = () => {
-    let FAQs = document.getElementsByClassName('faqBC')
-    window.scroll({
-      top: FAQs[0].offsetTop,
-      behavior: 'smooth',
-    })
+    if (window.location.pathname === '/') {
+      let FAQs = document.getElementsByClassName('faqBC')
+      window.scroll({
+        top: FAQs[0].offsetTop,
+        behavior: 'smooth',
+      })
+    } else {
+      navigate('../', { replace: true })
+    }
   }
 
   const handleSchedule = () => {
@@ -167,7 +183,9 @@ const Navbar = () => {
       <div className='navbar'>
         <div className='navbarMobile'>
           <div className='navbarCenterIcon'>
-            <div className='navbarMobileTopRight'>Life of Circle</div>
+            <div className='navbarMobileTopRight' onClick={() => navigate('/', { replace: true })}>
+              finanzfachkraft.ch
+            </div>
           </div>
         </div>
         <div className='navbarMobileButton'>
@@ -176,17 +194,16 @@ const Navbar = () => {
             <div className={Mobile ? 'navbarMenu active' : 'navbarMenu'}>
               <div className='navbarMenuContainer'>
                 <div className='navbarMobileTop'>
-                  <div className='navbarMobileTopRight menuOpen'>Life of Circle</div>
+                  <div className='navbarMobileTopRight menuOpen' onClick={() => navigate('/', { replace: true })}>
+                    finanzfachkraft.ch
+                  </div>
                   <div className='navbarMobileTopLeft'>
                     <Close className='CloseIcon' onClick={HandleMobileMenu} />
                   </div>
                 </div>
                 <div className='navbarMobileMain'>
-                  <div className='navbarCenterLink opacity7' onClick={handleAbout}>
-                    About
-                  </div>
                   <div className='navbarCenterLink opacity7' onClick={handleWarum}>
-                    Warum Wir
+                    Deine Vorteile
                   </div>
                   <div className='navbarCenterLink opacity7' onClick={handleDienstleistungen}>
                     Dienstleistungen
@@ -195,13 +212,13 @@ const Navbar = () => {
                     Arbeitsablauf
                   </div>
                   <div className='navbarCenterLink opacity7' onClick={handleWerte}>
-                    Werte
+                    Über mich
                   </div>
                   <div className='navbarCenterLink opacity7' onClick={handleFAQs}>
                     FAQs
                   </div>
                   <div className='navbarCenterLink navbarRightButton' onClick={handleSchedule}>
-                    Schedule Video Call
+                    Kostenloses Beratungsgespräch vereinbaren
                   </div>
                 </div>
               </div>
@@ -211,14 +228,13 @@ const Navbar = () => {
 
         <div className='navbarContainer'>
           <div className='navbarLeft'>
-            <div className='navbarLeftLogo'>Life of Circle</div>
+            <div className='navbarLeftLogo' onClick={() => navigate('/', { replace: true })}>
+              finanzfachkraft.ch
+            </div>
           </div>
           <div className='navbarCenter'>
-            <div className='navbarCenterItem' onClick={handleAbout}>
-              About
-            </div>
             <div className='navbarCenterItem' onClick={handleWarum}>
-              Warum Wir
+              Deine Vorteile
             </div>
             <div className='navbarCenterItem' onClick={handleDienstleistungen}>
               Dienstleistungen
@@ -227,7 +243,7 @@ const Navbar = () => {
               Arbeitsablauf
             </div>
             <div className='navbarCenterItem' onClick={handleWerte}>
-              Werte
+              Über mich
             </div>
             <div className='navbarCenterItem' onClick={handleFAQs}>
               FAQs
@@ -235,7 +251,7 @@ const Navbar = () => {
           </div>
           <div className='navbarRight'>
             <div className='navbarRightButton' onClick={handleSchedule}>
-              Schedule Video Call
+              Kostenloses Beratungsgespräch vereinbaren
             </div>
           </div>
         </div>
@@ -246,7 +262,7 @@ const Navbar = () => {
           <div className='mainContactUsForm'>
             <div className='formHeader'>
               <div className='formHeaderLeft'></div>
-              <div className='formHeaderCenter'>Life of Circle</div>
+              <div className='formHeaderCenter'>Kontaktformular</div>
               <div className='formHeaderRight'>
                 <div className='formClose' onClick={handleSchedule}>
                   <Close />
@@ -257,10 +273,10 @@ const Navbar = () => {
               <div className='mainContactUsFormInput'>
                 <div className='mainContactUsFormInputTitle'>
                   {validName ? (
-                    'Full Name*'
+                    'Name*'
                   ) : (
                     <>
-                      Full Name* <span className='contactUsNotValidValue'> Name to short</span>
+                      Name* <span className='contactUsNotValidValue'> Name to short</span>
                     </>
                   )}
                 </div>
@@ -269,7 +285,7 @@ const Navbar = () => {
                 >
                   <input
                     type='text'
-                    placeholder='Full Name'
+                    placeholder='Name'
                     className='contactUsInput'
                     name='name'
                     value={name}
@@ -280,10 +296,10 @@ const Navbar = () => {
               <div className='mainContactUsFormInput'>
                 <div className='mainContactUsFormInputTitle'>
                   {validEmail ? (
-                    'Email*'
+                    'E-Mail*'
                   ) : (
                     <>
-                      Email*<span className='contactUsNotValidValue'> Wrong email address</span>
+                      E-Mail*<span className='contactUsNotValidValue'> Wrong email address</span>
                     </>
                   )}
                 </div>
@@ -292,7 +308,7 @@ const Navbar = () => {
                 >
                   <input
                     type='email'
-                    placeholder='Your email'
+                    placeholder='E-Mail'
                     className='contactUsInput'
                     name='email'
                     value={email}
@@ -304,10 +320,10 @@ const Navbar = () => {
             <div className='mainContactUsFormInput'>
               <div className='mainContactUsFormInputTitle'>
                 {validSubject ? (
-                  'Subject*'
+                  'Betreff*'
                 ) : (
                   <>
-                    Subject*
+                    Betreff*
                     <span className='contactUsNotValidValue'>
                       {' '}
                       The subject should be between 10 and 30 symbols
@@ -331,10 +347,10 @@ const Navbar = () => {
             <div className='mainContactUsFormInput'>
               <div className='mainContactUsFormInputTitle'>
                 {validMessage ? (
-                  'Message*'
+                  'Nachricht*'
                 ) : (
                   <>
-                    Message*
+                    Nachricht*
                     <span className='contactUsNotValidValue'>
                       {' '}
                       The message should be between 10 and 150 symbols
@@ -351,7 +367,7 @@ const Navbar = () => {
               >
                 <textarea
                   type='text'
-                  placeholder='Message'
+                  placeholder='Nachricht'
                   className='contactUsInput'
                   name='message'
                   value={message}
@@ -361,7 +377,7 @@ const Navbar = () => {
             </div>
             <div className='contactUsButton'>
               <div className='contactUsButtonContainer' onClick={handleApply}>
-                Submit
+                Nachricht senden
               </div>
             </div>
           </div>

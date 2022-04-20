@@ -10,6 +10,14 @@ import { ReactComponent as StepsRightSVG } from '../../icons/StepsRight.svg'
 import './dein.css'
 
 const Dein = () => {
+  const handleContactUs = () => {
+    console.log('object')
+    let Warum = document.getElementsByClassName('contactUsScroll')
+    window.scroll({
+      top: Warum[0].offsetTop - 100,
+      behavior: 'smooth',
+    })
+  }
   return (
     <div className='componentFirst deinAni'>
       <StepsLeftSVG className='stepsLeftSVG' />
@@ -65,7 +73,7 @@ const Dein = () => {
               <div className='deinItemIcon'>
                 <ArrowSVG />
               </div>
-              <div className='deinItemText'>{'Auswertungen --> Reportings, Controlling'}</div>
+              <div className='deinItemText'>Auswertungen : Reportings, Controlling</div>
             </div>
 
             <div className='deinItem'>
@@ -130,7 +138,9 @@ const Dein = () => {
               Lass uns einen <span className='deinFooterSpan'> Kaffee trinken</span> und{' '}
               <span className='deinFooterSpan'>herausfinden</span>, wie ich dich unterstützen kann
             </div>
-            <div className='deinFooterButton'>Kostenloses Beratungsgespräch vereinbaren</div>
+            <div className='deinFooterButton' onClick={handleContactUs}>
+              Kostenloses Beratungsgespräch vereinbaren
+            </div>
             <DeinStarSVG className='deinFooterSVG' />
           </div>
         </div>

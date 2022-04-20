@@ -18,8 +18,8 @@ const NieWieder = () => {
               <div className='nieWiederItemLeft'>Deine Situation</div>
               <div className='nieWiederItemRight'>
                 Als Inhaber:in deines KMUs arbeitest du an vorderster Front mit. Neben deinem Kerngeschäft, musst
-                du dich aber noch um Buchhaltung, Personal-Management und Administration kümmern – oft wenn alle
-                anderen Feierabend haben oder das Wochenende geniessen.
+                du dich aber noch um Buchhaltung, Personal-Management und weiteres kümmern – oft wenn alle anderen
+                Feierabend haben oder das Wochenende geniessen.
               </div>
             </div>
 

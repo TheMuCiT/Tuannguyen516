@@ -4,10 +4,6 @@ import { ReactComponent as Stars } from '../../icons/stars.svg'
 
 import nieWiederPNg from '../../icons/nieWieder.png'
 
-import Person1 from '../../icons/Ellipse4.png'
-import Person2 from '../../icons/Ellipse5.png'
-import Person3 from '../../icons/Ellipse6.png'
-
 import './user.css'
 
 const User = () => {
@@ -33,6 +29,15 @@ const User = () => {
     setThree(true)
   }
 
+  const handleContactUs = () => {
+    console.log('object')
+    let Warum = document.getElementsByClassName('contactUsScroll')
+    window.scroll({
+      top: Warum[0].offsetTop - 100,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <div className='componentFirst userAni'>
       <div className='componentSecond'>
@@ -46,32 +51,40 @@ const User = () => {
               <div className='userLeftList'>
                 <div className={one ? 'userLeftItem selected' : 'userLeftItem'} onClick={handleFirst}>
                   <div className='userLeftItemIMG'>
-                    <img src={Person1} alt='Error' className='userLeftItemIMGPNG' />
+                    <img
+                      src='https://cdn.shopify.com/s/files/1/0558/8634/8336/files/sanitaerheld-donat_540x.jpg?v=1649074199'
+                      alt='Error'
+                      className='userLeftItemIMGPNG'
+                    />
                   </div>
 
                   <div className='userLeftItemText'>
-                    <div className='userLeftItemTextHeader'>Ahmet T.</div>
-                    <div className='userLeftItemTextAbout'>Sales Manager, Slack</div>
+                    <div className='userLeftItemTextHeader'>Donat Bachofner</div>
+                    <div className='userLeftItemTextAbout'>Geschäftsführer, Comfortfloor Schweiz AG</div>
                   </div>
                 </div>
                 <div className={two ? 'userLeftItem selected' : 'userLeftItem'} onClick={handleSecond}>
                   <div className='userLeftItemIMG'>
-                    <img src={Person2} alt='Error' className='userLeftItemIMGPNG' />
+                    <img src='https://i.ibb.co/5v9Kz83/tuan.jpg' alt='Error' className='userLeftItemIMGPNG' />
                   </div>
 
                   <div className='userLeftItemText'>
-                    <div className='userLeftItemTextHeader'>Özgür F.</div>
-                    <div className='userLeftItemTextAbout'>Head of Sales, Asana</div>
+                    <div className='userLeftItemTextHeader'>Tuan Nguyen</div>
+                    <div className='userLeftItemTextAbout'>Leitung E-Commerce, Sanitär Schweiz GmbH</div>
                   </div>
                 </div>
                 <div className={three ? 'userLeftItem selected' : 'userLeftItem'} onClick={handleThird}>
                   <div className='userLeftItemIMG'>
-                    <img src={Person3} alt='Error' className='userLeftItemIMGPNG' />
+                    <img
+                      src='https://i.ibb.co/HBL9cXv/Download-1.png'
+                      alt='Error'
+                      className='userLeftItemIMGPNG'
+                    />
                   </div>
 
                   <div className='userLeftItemText'>
-                    <div className='userLeftItemTextHeader'>Hande K.</div>
-                    <div className='userLeftItemTextAbout'>Sales Team Leader</div>
+                    <div className='userLeftItemTextHeader'>Hans Krummernacher</div>
+                    <div className='userLeftItemTextAbout'>Geschäftsführer, PK BAU AG</div>
                   </div>
                 </div>
               </div>
@@ -107,25 +120,30 @@ const User = () => {
                     <br />
                     <br />
                     {
-                      ' Andrea ist sich nicht zu schade, auch in Bereichen mit anzupacken welche welche nicht reine Treuhandaufgaben sind. Genau das, was ein KMU braucht --> Zuverlässig, speditiv und lösungsorientiert.'
+                      ' Andrea ist sich nicht zu schade, auch in Bereichen mit anzupacken welche welche nicht reine Treuhandaufgaben sind. Genau das, was ein KMU braucht: Zuverlässig, speditiv und lösungsorientiert.'
                     }
                   </>
                 ) : (
                   <>
-                    Andrea Solèr unterstützt uns schon seit der Firmengründung von A bis Z. Sie hat nicht nur die
-                    ganze Gründung tatkräftig begleitet, sondern sich auch um alle administrativen Arbeiten und
-                    Prozesse gekümmert. Sie hat also nicht nur das komplette Aufsetzen der Buchhaltung übernommen,
-                    sondern sich z.B. auch um Arbeitsverträge, Personalreglement, Stellenausschreibungen,
-                    Versicherungsthemen usw. gekümmert.
+                    Andrea hat die Finanzbuchhaltung mehrerer Gesellschaften geführt. Zu Ihren Aufgaben gehörten:
+                    Anlagenbuchhaltungen, MWST, Abschlusse, Steuererklärungen, Lohnbuchhaltung und Personalwesen.
+                    Ebenfalls hat sie sich um die Kommunikation mit externen Parteien und allgemeine
+                    Administrationsaufgaben gekümmert. Andrea ist bestens qualifiziert für diese Aufgaben und ist
+                    in der Lage mit ihrem breiten Fachwissen und analytischem Denken angemessene Lösungen auf einem
+                    professionellem Niveau umzusetzen. Auch in angespannten Situationen bleibt sie ruhig und
+                    handelt besonnen und überlegt.
                     <br />
                     <br />
                     {
-                      ' Andrea ist sich nicht zu schade, auch in Bereichen mit anzupacken welche welche nicht reine Treuhandaufgaben sind. Genau das, was ein KMU braucht --> Zuverlässig, speditiv und lösungsorientiert.'
+                      ' Wir attestieren Andrea eine hohe Effizienz und eine aussergewöhnliche Leistungsbereitschaft. Wir schätzen zudem ihre Loyalität, Vertrauenswürdigkeit und Diskretion.'
                     }
                   </>
                 )}
               </div>
             </div>
+          </div>
+          <div className='deinFooterButton' onClick={handleContactUs}>
+            Kostenloses Beratungsgespräch vereinbaren
           </div>
         </div>
       </div>

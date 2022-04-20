@@ -2,7 +2,9 @@ import React from 'react'
 import './animation.css'
 const Animation = () => {
   window.onscroll = function () {
-    scrollAnimation()
+    if (window.location.pathname === '/') {
+      scrollAnimation()
+    }
   }
 
   const scrollAnimation = () => {

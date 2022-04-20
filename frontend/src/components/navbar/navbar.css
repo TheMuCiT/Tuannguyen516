@@ -46,6 +46,7 @@
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .navbarCenterItem {
@@ -54,7 +55,7 @@
   opacity: 1;
   font-weight: 400;
   font-size: 20px;
-  margin: 0 35px;
+  margin: 0 20px;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -63,10 +64,10 @@
 .navbarRightItem:hover,
 .navbarRightButton:hover,
 .navbarCenterLink:hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .navbarCenterItem:active,
@@ -87,7 +88,7 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -133,7 +134,7 @@
   }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1350px) {
   .navbar {
     justify-content: flex-end;
     align-items: center;
@@ -217,6 +218,7 @@
     color: #000000;
     font-weight: 600;
     font-size: 21px;
+    cursor: pointer;
   }
 
   .menuOpen {

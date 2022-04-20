@@ -11,6 +11,11 @@
   background-color: #e9e7e2;
   border-radius: 12px;
 }
+
+.mainContactUsFormPage {
+  width: 100%;
+  padding-bottom: 50px;
+}
 .mainContactUsFormInputHalf {
   display: flex;
   align-items: center;

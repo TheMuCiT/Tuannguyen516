@@ -150,12 +150,11 @@ const FAQ = () => {
             </div>
             {two && (
               <div className='faqItemAnswer'>
-                <div className='faqItemAnswerTitle'>Arbeitest du alleine oder hast duMitarbeiter:innen?</div>
+                <div className='faqItemAnswerTitle'>Arbeitest du alleine oder hast du Mitarbeiter:innen?</div>
                 <div className='faqItemAnswerText'>
                   Ich freue mich, dich und dein Unternehmen kennenzulernen. In einem unverbindlichen Gespräch
                   finden wir heraus, wie ich dich unterstützen kann.
                 </div>
-                <div className='deinFooterButton'>Kostenloses Beratungsgespräch vereinbaren</div>
               </div>
             )}
             <div className='faqItem' onClick={() => setThree(!three)}>
@@ -176,7 +175,6 @@ const FAQ = () => {
                   Ja, voll und ganz. Ich begrenze meine Anzahl Kund:innen, damit ich für alle vollumfänglich da
                   sein kann. Deshalb: Melde dich schnell!
                 </div>
-                <div className='deinFooterButton'>Kostenloses Beratungsgespräch vereinbaren</div>
               </div>
             )}
           </div>

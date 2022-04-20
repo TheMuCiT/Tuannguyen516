@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Animation from '../../components/animation/Animation'
 
 import Intro from '../../components/intro/Intro'
@@ -10,10 +11,15 @@ import Effizienz from '../../components/effizienz/Effizienz'
 import Steps from '../../components/steps/Steps'
 import User from '../../components/user/User'
 import FAQ from '../../components/faq/FAQ'
+import ContactUs from '../../components/navbar/ContactUs'
 
 import './main.css'
 
 const Main = () => {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   return (
     <div className='main'>
       <Intro />
@@ -25,6 +31,7 @@ const Main = () => {
       <Steps />
       <User />
       <FAQ />
+      <ContactUs />
       <Animation />
     </div>
   )

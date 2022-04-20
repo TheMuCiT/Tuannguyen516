@@ -87,6 +87,12 @@
   font-size: 22px;
   color: #0d0d0d;
 }
+.userLeftItemIMGPNG {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 @media only screen and (max-width: 1400px) {
   .userContainer {

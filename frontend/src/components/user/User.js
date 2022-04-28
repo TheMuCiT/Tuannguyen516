@@ -76,15 +76,15 @@ const User = () => {
                 <div className={three ? 'userLeftItem selected' : 'userLeftItem'} onClick={handleThird}>
                   <div className='userLeftItemIMG'>
                     <img
-                      src='https://i.ibb.co/HBL9cXv/Download-1.png'
+                      src='https://img.myloview.de/fototapeten/waist-up-portrait-of-mature-bald-man-smiling-at-camera-while-standing-with-arms-crossed-and-posing-confidently-leaning-against-wall-copy-space-700-197212859.jpg'
                       alt='Error'
                       className='userLeftItemIMGPNG'
                     />
                   </div>
 
                   <div className='userLeftItemText'>
-                    <div className='userLeftItemTextHeader'>Hans Krummernacher</div>
-                    <div className='userLeftItemTextAbout'>Geschäftsführer, PK BAU AG</div>
+                    <div className='userLeftItemTextHeader'>Henry Kramer</div>
+                    <div className='userLeftItemTextAbout'>Geschäftsführer, EM Baununternehmung AG</div>
                   </div>
                 </div>
               </div>

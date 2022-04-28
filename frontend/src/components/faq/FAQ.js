@@ -33,7 +33,6 @@ const FAQ = () => {
             </div>
             {one && (
               <div className='faqItemAnswer'>
-                <div className='faqItemAnswerTitle'>Welche Bereiche deckst du alles ab?</div>
                 <div className='faqItemAnswerText'>
                   Gemeinsam erarbeiten wir, mit welchen Dienstleistungen ich dich am besten unterstützen kann und
                   kreieren daraus ein Wohlfühlpaket für dich. Diese Dienstleistungen beinhalten:
@@ -142,7 +141,7 @@ const FAQ = () => {
             <div className='faqItem' onClick={() => setTwo(!two)}>
               <div className='faqItemLeft'>
                 <div className='faqItemNumber'>02.</div>
-                <div className='faqItemTitle'>Arbeitest du alleine oder hast duMitarbeiter:innen?</div>
+                <div className='faqItemTitle'>Arbeitest du alleine oder hast du Mitarbeiter:innen?</div>
               </div>
               <div className='faqItemRight'>
                 <FaqArrowSVG className={two ? 'faqArrowSVGActive' : 'faqArrowSVG'} />
@@ -150,7 +149,6 @@ const FAQ = () => {
             </div>
             {two && (
               <div className='faqItemAnswer'>
-                <div className='faqItemAnswerTitle'>Arbeitest du alleine oder hast du Mitarbeiter:innen?</div>
                 <div className='faqItemAnswerText'>
                   Ich freue mich, dich und dein Unternehmen kennenzulernen. In einem unverbindlichen Gespräch
                   finden wir heraus, wie ich dich unterstützen kann.
@@ -160,7 +158,9 @@ const FAQ = () => {
             <div className='faqItem' onClick={() => setThree(!three)}>
               <div className='faqItemLeft'>
                 <div className='faqItemNumber'>03.</div>
-                <div className='faqItemTitle'>Kannst du dich als externe Fachkraft überhaupt auf mein </div>
+                <div className='faqItemTitle'>
+                  Kannst du dich als externe Fachkraft überhaupt auf mein Unternehmen konzentrieren?
+                </div>
               </div>
               <div className='faqItemRight'>
                 <FaqArrowSVG className={three ? 'faqArrowSVGActive' : 'faqArrowSVG'} />
@@ -168,9 +168,6 @@ const FAQ = () => {
             </div>
             {three && (
               <div className='faqItemAnswer'>
-                <div className='faqItemAnswerTitle'>
-                  Kannst du dich als externe Fachkraft überhaupt auf mein Unternehmen konzentrieren?
-                </div>
                 <div className='faqItemAnswerText'>
                   Ja, voll und ganz. Ich begrenze meine Anzahl Kund:innen, damit ich für alle vollumfänglich da
                   sein kann. Deshalb: Melde dich schnell!

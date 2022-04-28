@@ -218,7 +218,7 @@ const Navbar = () => {
                     FAQs
                   </div>
                   <div className='navbarCenterLink navbarRightButton' onClick={handleSchedule}>
-                    Kostenloses Beratungsgespräch vereinbaren
+                    Kostenloses Beratungsgespräch
                   </div>
                 </div>
               </div>
@@ -251,7 +251,7 @@ const Navbar = () => {
           </div>
           <div className='navbarRight'>
             <div className='navbarRightButton' onClick={handleSchedule}>
-              Kostenloses Beratungsgespräch vereinbaren
+              Kostenloses Beratungsgespräch
             </div>
           </div>
         </div>

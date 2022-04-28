@@ -73,7 +73,7 @@ const Dein = () => {
               <div className='deinItemIcon'>
                 <ArrowSVG />
               </div>
-              <div className='deinItemText'>Auswertungen : Reportings, Controlling</div>
+              <div className='deinItemText'>Auswertungen: Reportings, Controlling</div>
             </div>
 
             <div className='deinItem'>

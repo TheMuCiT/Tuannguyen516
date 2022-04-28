@@ -12,6 +12,7 @@
   width: 100%;
   height: auto;
   z-index: 0;
+  display: none;
 }
 
 .faq {
@@ -78,7 +79,7 @@
   color: #0d0d0d;
   opacity: 1;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 26px;
   margin-left: 20px;
 }
 

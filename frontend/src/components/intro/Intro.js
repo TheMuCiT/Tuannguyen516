@@ -18,7 +18,7 @@ const Intro = () => {
       <div className='componentSecond'>
         <div className='intro'>
           <div className='introLeft'>
-            <div className='introTitle'>Buchhaltung und Personal- Management für KMUs in der Zentralschweiz..</div>
+            <div className='introTitle'>Buchhaltung und Personal- Management für KMUs in der Zentralschweiz.</div>
             <div className='introText'>
               Konzentriere dich auf deine Kernkompetenzen – ich übernehme Buchhaltung, Personal-Management und
               Administration.

@@ -16,6 +16,7 @@
   left: 2%;
   top: 30%;
   transform: translate(-50%);
+  display: none;
 }
 
 .stepsRightSVG {
@@ -23,6 +24,7 @@
   left: 99%;
   top: 10%;
   transform: translate(-50%);
+  display: none;
 }
 
 .deinTitle {

@@ -43,7 +43,7 @@ const User = () => {
       <div className='componentSecond'>
         <div className='user'>
           <div className='nieWiederHeader'>
-            <div className='nieWiederTitle'>Nie wieder Samstag im Büro verbringen</div>
+            <div className='nieWiederTitle'>Was meine Klient:innen über mich sagen</div>
             <img src={nieWiederPNg} alt='' className='nieWiederPNG' />
           </div>
           <div className='userMain'>

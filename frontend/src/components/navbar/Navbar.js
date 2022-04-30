@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 
 import { ReactComponent as MobileMenu } from '../../icons/MobileMenu.svg'
 import { ReactComponent as Close } from '../../icons/Close.svg'
-import Logo from '../../icons/Logo.png'
+import { ReactComponent as Logo } from '../../icons/Logo.svg'
 
 import './navbar.css'
 import './contactUs.css'
@@ -185,7 +185,7 @@ const Navbar = () => {
         <div className='navbarMobile'>
           <div className='navbarCenterIcon'>
             <div className='navbarMobileTopRight' onClick={() => navigate('/', { replace: true })}>
-              <img src={Logo} alt='' className='Logo' />
+              <Logo className='Logo' />
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@ const Navbar = () => {
               <div className='navbarMenuContainer'>
                 <div className='navbarMobileTop'>
                   <div className='navbarMobileTopRight menuOpen' onClick={() => navigate('/', { replace: true })}>
-                    <img src={Logo} alt='' className='Logo' />
+                    <Logo className='Logo' />
                   </div>
                   <div className='navbarMobileTopLeft'>
                     <Close className='CloseIcon' onClick={HandleMobileMenu} />
@@ -230,7 +230,7 @@ const Navbar = () => {
         <div className='navbarContainer'>
           <div className='navbarLeft'>
             <div className='navbarLeftLogo' onClick={() => navigate('/', { replace: true })}>
-              <img src={Logo} alt='' className='Logo' />
+              <Logo className='Logo' />
             </div>
           </div>
           <div className='navbarCenter'>

@@ -150,8 +150,8 @@ const FAQ = () => {
             {two && (
               <div className='faqItemAnswer'>
                 <div className='faqItemAnswerText'>
-                  Ich freue mich, dich und dein Unternehmen kennenzulernen. In einem unverbindlichen Gespräch
-                  finden wir heraus, wie ich dich unterstützen kann.
+                  Ich arbeite alleine. So kannst du versichert sein, dass deine Daten immer in guten Händen sind
+                  und hast nur eine einzige Ansprechperson.
                 </div>
               </div>
             )}

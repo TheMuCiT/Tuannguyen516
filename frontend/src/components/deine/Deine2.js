@@ -10,7 +10,7 @@ const Deine2 = () => {
       <Deine1SVG className='deineBCSVG2' />
       <div className='componentSecond deineSecond'>
         <div className='deine'>
-          <div className='deineTitleBig'>Drei Schritte zu einer tollen Zusammenarbeit.</div>
+          <div className='deineTitleBig'>Drei Schritte zu einer tollen Zusammenarbeit</div>
 
           <div className='deineLineContainer'>
             <div className='deineLine' />

@@ -136,7 +136,7 @@ const Dein = () => {
           <div className='deinFooter'>
             <div className='deinFooterTitle'>
               Lass uns einen <span className='deinFooterSpan'> Kaffee trinken</span> und{' '}
-              <span className='deinFooterSpan'>herausfinden</span>, wie ich dich unterstützen kann
+              <span className='deinFooterSpan'>herausfinden</span>, wie ich dich unterstützen kann.
             </div>
             <div className='deinFooterButton' onClick={handleContactUs}>
               Kostenloses Beratungsgespräch vereinbaren

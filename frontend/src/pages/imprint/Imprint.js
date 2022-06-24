@@ -18,7 +18,7 @@ const Imprint = () => {
           <div className='privacyText privacyTextBold'>Geschäftsführer</div>
           <div className='privacyText'>Andrea Solèr</div>
           <div className='privacyText privacyTextBold'>Telefonnummer</div>
-          <div className='privacyText'>+41 79 697 79 07</div>
+          <div className='privacyText'>+41 41 932 18 38</div>
           <div className='privacyText privacyTextBold'>E-Mail-Adresse</div>
           <div className='privacyText'>andrea.soler@finanzfachkraft.ch</div>
         </div>

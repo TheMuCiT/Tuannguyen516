@@ -51,7 +51,7 @@ const ContactUs = () => {
     } else {
       setValidMessage(true)
     }
-    if (subject.length < 10 || message.length > 30) {
+    if (subject.length < 1 || message.length > 300) {
       setValidSubject(false)
     } else {
       setValidSubject(true)
@@ -152,7 +152,7 @@ const ContactUs = () => {
               ) : (
                 <>
                   Betreff*
-                  <span className='contactUsNotValidValue'> The subject should be between 10 and 30 symbols</span>
+                  <span className='contactUsNotValidValue'> The subject should be between 1 and 300 symbols</span>
                 </>
               )}
             </div>

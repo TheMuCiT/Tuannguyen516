@@ -221,7 +221,7 @@ const Footer = () => {
             <div className='footerMainRightItem'>
               <div className='footerMainRightItemTitle'>Kontakt</div>
               <div className='footerMainRightItemTextNo'>andrea.soler@finanzfachkraft.ch</div>
-              <div className='footerMainRightItemTextNo'>+41 79 697 79 07</div>
+              <div className='footerMainRightItemTextNo'>+41 41 932 18 38</div>
               <div className='footerMainRightItemTextNo'>Bodenmatte 3, 6062 Wilen (Sarnen)</div>
             </div>
           </div>
